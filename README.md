@@ -3,6 +3,9 @@
 This repo was inspired by Paper [Bag of Tricks for Image Classification with Convolutional Neural Networks](https://arxiv.org/abs/1812.01187)
 
 
+This repo was inspired by Paper [Bag of Tricks for Image Classification with Convolutional Neural Networks](https://arxiv.org/abs/1812.01187)
+
+
 ## tricks
 
 tricks I've tested, some of them were from the Paper [Bag of Tricks for Image Classification with Convolutional Neural Networks](https://arxiv.org/abs/1812.01187) :
@@ -29,5 +32,6 @@ tricks I've tested, some of them were from the Paper [Bag of Tricks for Image Cl
 
 KeyPoint:  
 The variance of the activation value decreases layer by layer, which leads to the gradient in the back propagation also decreases layer by layer. To solve the gradient disappearance, we should avoid the attenuation of the variance of the activation value, and ideally, the output value of each layer (the activation value) should keep the gaussian distribution.  
-$y = Wx+b, E(x_i)=0 and E(W_i)=0$, in order to make Var(y) = Var(x)=N*Var(W_i)*Var(x_i), so that Var(w_i) = 1/N. Because of $std = \sqrt {Var}$, std(W_i)=1/\sqrt N$.  
-**The problem with Xavier initialization is that it only applies to linear activation functions **
+y = Wx+b, E(x_i)=0 and E(W_i)=0$, in order to make Var(y) = Var(x)=N*Var(W_i)*Var(x_i), so that Var(w_i) = 1/N. Because of ${std = \sqrt {Var}$, std(W_i)=1/\sqrt N}$.  
+**The problem with Xavier initialization is that it only applies to linear activation functions** 
+
